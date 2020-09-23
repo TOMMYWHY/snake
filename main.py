@@ -27,16 +27,16 @@ net = NeuralNetwork()
 game = Game()
 
 # Joseph is the funniest to watch, he always does something cool
-net.load(filename_weights='saved/joseph_weights.npy', filename_biases='saved/joseph_biases.npy')
-game.start(display=True, neural_net=net)
+# net.load(filename_weights='saved/joseph_weights.npy', filename_biases='saved/joseph_biases.npy')
+# game.start(display=True, neural_net=net)
 
 # Valentin is safe and precise
-net.load(filename_weights='saved/valentin_weights.npy', filename_biases='saved/valentin_biases.npy')
-game.start(display=True, neural_net=net)
+# net.load(filename_weights='saved/valentin_weights.npy', filename_biases='saved/valentin_biases.npy')
+# game.start(display=True, neural_net=net)
 
 # Larry is very very safe but also my best network, don't hesitate to run him a few times if he's doing loops
-net.load(filename_weights='saved/larry_weights.npy', filename_biases='saved/larry_biases.npy')
-game.start(display=True, neural_net=net)
+# net.load(filename_weights='saved/larry_weights.npy', filename_biases='saved/larry_biases.npy')
+# game.start(display=True, neural_net=net)
 
 
 """
@@ -58,8 +58,8 @@ The training speed depend a lot on your CPU and its cores number
 
 Contact me if you know how to make it run on GPU
 """
-# gen = GeneticAlgorithm(population_size=1000, crossover_method='neuron', mutation_method='weight')
-# gen.start()
+gen = GeneticAlgorithm(population_size=1000, crossover_method='neuron', mutation_method='weight')
+gen.start()
 
 
 
